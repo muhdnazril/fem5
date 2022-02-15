@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+}
+header{
+    background-image: url(bg-hero-desktop.svg);
+    background-color: aliceblue;
+    margin-bottom: 5rem;
+}
+.cdbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.trtop{
+    background-color: white;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    border-radius: 1.4rem;
+}
+.otbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.rtbox{
+    width: 50%;
+    padding: 3rem;
+}
+.trbot{
+    padding: 0.8rem 1.5rem;
+    border-radius: 1.5rem;
+    background-color: rgb(218, 79, 218);
+    /* border: none; */
+}
+.ltbox{
+    width: 50%;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bx1, .bx2, .bx3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+    border-radius: 5px;
+    width: 70%;
+    margin-bottom: 3rem;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.topft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    width: 50%;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: bold;
+    position: relative ;
+    bottom: -50;
+    background-color: #fff;
+}
+.ftbtn{
+    margin: 1rem;
+    padding: 0.8rem 0.2rem;
+    border-radius: 1rem;
+    width: 20%;
+    min-width: 90px;
+    background-color:rgb(218, 79, 218) ;
+}
+.botft{
+    width: 100%;
+    background-color: rgb(8, 34, 34);
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+.bft1, .bft2, .bft3, .bft4 {
+    max-width: 800px;
+    text-align: justify;
+    margin-right: 2rem;
+    color: #fff;
+    /* display: flex;
+    justify-content: space-evenly; */
+}
+.bft1 img {
+    filter: grayscale(1) invert(1);
+}
+.bft2 a, .bft3 a{
+    text-decoration: none;
+    color: #fff;
+}
+@media screen and (max-width: 550px) {
+    .trtop{
+        margin-top: 1rem;
+        width: fit-content;
+    }
+    .cdbox{
+        align-items: center;
+    }
+    .cdbox, .otbox, .bx1, .bx2, .bx3, .botft{
+        flex-direction: column;
+    }
+    .bft3{
+     padding-bottom:  1rem; ;
+    }
+
+}
